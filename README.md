@@ -1,5 +1,5 @@
 # jinja_bs_modal
-Jinja extension to render Bootstrap modals.
+Jinja extension for rendering Bootstrap modals.
 
 ## Usage
 

@@ -118,3 +118,19 @@ class JinjaBSModalExtension(Extension):
                     </script>""")]
             return result
         return None
+
+if __name__ == '__main__':
+    from jinja2 import Environment, Template
+
+    env = Environment(extensions=[JinjaBSModalExtension])
+
+    template = env.from_string("""
+    {% modal(id='modal-full', title='Caption', focus='input') %}
+        Modal body here
+    {% modal_footer %}
+        Modal footer here
+    {% endmodal %}
+     """)
+    html = template.render(name='Dima')
+
+    print(html)
