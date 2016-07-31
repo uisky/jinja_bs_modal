@@ -3,6 +3,13 @@ jinja\_bs\_modal
 
 Jinja extension for rendering Bootstrap modals.
 
+Installation
+------------
+
+::
+
+    pip install git+https://github.com/uisky/jinja_bs_modal.git
+
 Usage
 -----
 

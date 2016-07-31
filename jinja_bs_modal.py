@@ -120,7 +120,7 @@ class JinjaBSModalExtension(Extension):
         return None
 
 if __name__ == '__main__':
-    from jinja2 import Environment, Template
+    from jinja2 import Environment
 
     env = Environment(extensions=[JinjaBSModalExtension])
 
@@ -131,6 +131,6 @@ if __name__ == '__main__':
         Modal footer here
     {% endmodal %}
      """)
-    html = template.render(name='Dima')
+    html = template.render()
 
     print(html)
